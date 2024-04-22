@@ -58,7 +58,9 @@ form{
         font-weight: 600;
         border: none;
     }
-
+    #enviar:hover{
+        cursor: pointer;
+    }
 }
 
 a{

@@ -64,7 +64,9 @@ form{
         border: none;
         border-radius: 5px;
     }
-
+    #enviar:hover{
+        cursor: pointer;
+    }
 }
 
 a{
