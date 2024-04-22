@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    background-image: url('../assets/Palmares.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 97vh;
+    width: 100vw;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+h1{
+    font-family: "Jersey 25", sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 15px;
+
+}
+.content{
+    display: block;
+    margin: 50px  auto;
+    background-color: rgba(161, 175, 155, 0.868);
+    width: 350px;
+    height: 200px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+ul{
+    list-style: none ;
+}
+li{
+    margin: 5px;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: black;
+}
+
+
+a{
+    color: rgb(12, 83, 39);
+    font-size: 1.2em;
+    transition: .2s;
+}
+
+a:hover{
+    color: rgb(12, 162, 69);
+    font-size: 1.24em;
+}

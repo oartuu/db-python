@@ -4,18 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/resultados.css')}}">
     <title>Resultado</title>
 </head>
 <body>
-    <h1>Resultados da Etapa {{ etapa }}</h1>
-    <ul>
-        {% for resultado in resultados %}
-            <li>{{ resultado }}</li>
-        {% endfor %}
-    </ul>
-    {% if proxima_etapa %}
-        <a href="/etapa/{{ proxima_etapa }}">Próxima etapa</a>
-    {% endif %}
+    <div class="main">
+        <h1>Resultados da Etapa {{ etapa }}</h1>
+        <div class="content">
+            <ul>
+                {% for resultado in resultados %}
+                    <li>{{ resultado }}</li>
+                {% endfor %}
+            </ul>
+            {% if proxima_etapa %}
+                <a href="/etapa/{{ proxima_etapa }}">Próxima etapa</a>
+            {% endif %}
+        </div>
+    </div>
 </body>
 </html>
 

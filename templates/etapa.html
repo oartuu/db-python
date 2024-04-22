@@ -4,17 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/respostas.css')}}">
     <title>Etapa {{ etapa }}</title>
 </head>
 <body>
-    <h1>Etapa {{ etapa }}</h1>
-    <form action="/etapa/{{ etapa }}" method="post">
-        <label for="consulta">Digite a consulta SQL:</label><br>
-        <textarea name="consulta" id="consulta" rows="4" cols="50"></textarea><br>
-        <button type="submit">Enviar</button>
-    </form>
-    {% if erro %}
-        <p>A consulta está incorreta. Tente novamente.</p>
-    {% endif %}
+    <div class="main">
+        <h1>Etapa {{ etapa }}</h1>
+        <div class="content">
+            <form action="/etapa/{{ etapa }}" method="post">
+                <label for="consulta">Digite a consulta SQL:</label><br>
+                <textarea name="consulta" id="consulta" rows="3" cols="50"></textarea><br>
+                <button type="submit" id="enviar">Enviar</button>
+            </form>
+            {% if erro %}
+                <p>A consulta está incorreta. Tente novamente.</p>
+            {% endif %}
+        </div>
+    </div>
 </body>
 </html>
