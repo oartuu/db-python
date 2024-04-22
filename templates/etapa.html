@@ -1,0 +1,20 @@
+<!-- etapa.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etapa {{ etapa }}</title>
+</head>
+<body>
+    <h1>Etapa {{ etapa }}</h1>
+    <form action="/etapa/{{ etapa }}" method="post">
+        <label for="consulta">Digite a consulta SQL:</label><br>
+        <textarea name="consulta" id="consulta" rows="4" cols="50"></textarea><br>
+        <button type="submit">Enviar</button>
+    </form>
+    {% if erro %}
+        <p>A consulta está incorreta. Tente novamente.</p>
+    {% endif %}
+</body>
+</html>
